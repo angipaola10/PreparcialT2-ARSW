@@ -1,0 +1,9 @@
+edu\eci\arsw\coronavirusStats\Services\ICoronavirusStatsServices.class
+edu\eci\arsw\coronavirusStats\Services\impl\HttpConectionServices.class
+edu\eci\arsw\coronavirusStats\Controller\CoronavirusStatsController.class
+edu\eci\arsw\coronavirusStats\Model\Case.class
+edu\eci\arsw\coronavirusStats\Services\IHttpConectionServices.class
+edu\eci\arsw\coronavirusStats\Services\impl\CoronavirusStatsServices.class
+edu\eci\arsw\coronavirusStats\Model\Latlng.class
+edu\eci\arsw\coronavirusStats\Services\CoronavirusStatsServicesException.class
+edu\eci\arsw\coronavirusStats\CoronavirusAPIApplication.class
