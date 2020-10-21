@@ -1,0 +1,7 @@
+edu.eci.arsw.coronavirusStats
+edu.eci.arsw.coronavirusStats.Cache
+edu.eci.arsw.coronavirusStats.Cache.impl
+edu.eci.arsw.coronavirusStats.Controller
+edu.eci.arsw.coronavirusStats.Model
+edu.eci.arsw.coronavirusStats.Services
+edu.eci.arsw.coronavirusStats.Services.impl

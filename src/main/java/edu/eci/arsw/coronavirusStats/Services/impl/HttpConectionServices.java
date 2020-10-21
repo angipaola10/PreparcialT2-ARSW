@@ -25,7 +25,7 @@ public class HttpConectionServices implements IHttpConectionServices {
                     .asString();
             return new JSONObject(response.getBody());
         } catch (Exception e) {
-            throw new CoronavirusStatsServicesException("");
+            throw new CoronavirusStatsServicesException(e.getMessage());
         }
     }
 
