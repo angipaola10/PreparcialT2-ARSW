@@ -1,6 +1,38 @@
 # Escuela Colombiana de Ingeniería Julio Garavito - Arquitecturas de Software ARSW - Parcial Segundo Tercio
 
+## Diseño de la arquitectura
+
+Este proyecto implementa una arquitectura cliente-servidor, está compuesto de un backend REST en el que se cosumen 2 API externas,
+el diseño consiste en una clara separación de capas en las que se utiliza el principio de inyección de dependencias, lo que garantiza 
+un bajo acoplamiento. Esta arquitectura también cuenta con un frontend en el que se encuentra programado un cliente capaz de consumir 
+los servicios prestados por la capa controladora del backend y una API externa, esto con el fin de llevar los datos a la vista que los 
+solicita de modo que el usuario pueda interactuar con ellos.   
+
+## Instrucciones para compilar y ejecutar el programa localmente
+
+   * Descargar o clonar este repositorio
+   * Acceder a la ubicacion del proyecto en terminal de comandos
+   * Ejecutar el comando mvn clean compile
+   * Ejecutar el comando mvn spring-boot:run
+   * Ingresar la dirección http://localhost:8080/
+
+## Cómo se puede extender y como podria hacer que una funcion implemente un proveedor de servicios diferente:
+
+Como el proyecto ha sido desarrollado implementando el principio de inyección de dependencias, es facil realizar una extensión,
+se pueden incluir más servicios que implementen las interfaces existentes y mediante el uso de las anotaciones que nos brinda springboot
+podemos diferenciar dichos servicios facilmente, de igual manera se pueden crear nuevas interfaces que provean nuevos servicios y 
+contrubuyan al funcionamiento de la aplicación. 
+
+Consumir servicios brindados por otros proovedores no implica mayor esfuerzo, pues al tener la capa de servicios encargada de consumir 
+las API externas, se facilita la creación de nuevos metodos que obtengan la información y la adecuen a el diseño planteado para este proyecto.      
+
+## Enlace heroku
+
 [![Deployed to Heroku](https://www.herokucdn.com/deploy/button.png)](https://angijimenez-arsw-preparcialt2.herokuapp.com/)
+
+## Bonos 
+
+Se realizó el primero bono: Si el dato del cache tiene más de 5 min se debe solicitar nuevamente al servidor externo.
 
 ## Preparación para el Parcial
 
